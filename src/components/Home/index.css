@@ -1,0 +1,177 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url("https://files.nccih.nih.gov/doctor-patient-gettyimages-1270134696-square.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+    animation: zoom-in 10s; /* Adjust duration as needed */
+  animation-fill-mode: forwards;
+  filter: blur(0.5px); /* Adjust blur intensity as needed */
+  overflow: hidden;
+  }
+
+  @keyframes zoom-in {
+    0% {
+      background-size: 100% 100%; /* Initial state - full size */
+    }
+    100% {
+      background-size: 120% 120%; /* Final state - zoomed in */
+    }
+  }
+
+  .home-heading {
+    font-family: 'Arial';
+    font-weight: bold;
+    line-height: 35px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+ 
+  .home-description{
+    font-family: 'Arial';
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  }
+
+  .features-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .features-heading{
+    color: black;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .features-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .each-feature{
+    width: 45%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 10px
+  }
+
+  .features-img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-description{
+    color: black;
+    font-family: "Arial";
+    font-size: 11px;
+  }
+
+  @media screen and (min-width:768px){
+    .features-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .each-feature{
+        width: 30%;
+        margin-right: 5px
+    }
+    .features-img{
+        width: 70px;
+        height: 70px;
+      }
+    
+      .feature-description{
+        color: black;
+        font-family: "Arial";
+        font-size: 13px;
+      }
+    
+  }
+
+  .copy-right-container{
+    background-image: url("https://i.ytimg.com/vi/KgdjqnYFrHg/maxresdefault.jpg");
+    background-size: cover;
+    height: 40vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .each-option{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .option-head{
+    color: white;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .option-desc{
+    color: white;
+    font-family: 'Arial';
+    font-size: 10px;
+  }
+
+  @media screen and (min-width:768px){
+    .copy-right-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .option-head{
+      color: white;
+      font-family: 'Arial';
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .option-desc{
+      color: white;
+      font-family: 'Arial';
+      font-size: 15px;
+    }
+    .home-description{
+      font-family: 'Arial';
+      font-weight: 500;
+      color: white;
+      font-size: 26px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+    }
+    .home-heading {
+      font-family: 'Arial';
+      font-weight: bold;
+      line-height: 56px;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+  } 
