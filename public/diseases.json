@@ -361,6 +361,180 @@
         "description": "A cancer of the lymphatic system."
       },
       {
+        "name": "Salmonellosis",
+        "symptoms": ["diarrhea", "fever", "abdominal cramps", "food poisoning"],
+        "medication": ["Antibiotics (in severe cases)", "Oral rehydration solutions"],
+        "description": "An infection caused by Salmonella bacteria, often through contaminated food or water."
+    },
+    {
+      "name": "Campylobacteriosis",
+      "symptoms": ["diarrhea", "cramps", "fever", "vomiting", "food poisoning"],
+      "medication": ["Antibiotics (in severe cases)", "Oral rehydration solutions"],
+      "description": "An infection caused by Campylobacter bacteria, commonly through undercooked poultry or contaminated water."
+  },
+  {
+    "name": "E. coli Infection",
+    "symptoms": ["severe stomach cramps", "diarrhea (often bloody)", "vomiting", "food poisoning"],
+    "medication": ["Oral rehydration solutions", "Avoidance of antibiotics (as they may worsen symptoms)"],
+    "description": "An infection caused by Escherichia coli bacteria, often through contaminated food or water."
+},
+{
+  "name": "Norovirus Infection",
+  "symptoms": ["diarrhea", "vomiting", "nausea", "stomach pain", "food poisoning"],
+  "medication": ["Oral rehydration solutions", "Rest"],
+  "description": "A highly contagious virus causing gastroenteritis, often spread through contaminated food or surfaces."
+},
+{
+  "name": "Listeriosis",
+  "symptoms": ["fever", "muscle aches", "nausea", "diarrhea", "food poisoning"],
+  "medication": ["Antibiotics"],
+  "description": "A serious infection caused by Listeria bacteria, commonly found in contaminated food such as unpasteurized dairy products."
+},
+{
+  "name": "Alopecia Areata",
+  "symptoms": ["hair loss in small, round patches on the scalp", "hair loss on other parts of the body"],
+  "medication": ["Corticosteroids", "Topical immunotherapy", "Minoxidil"],
+  "description": "An autoimmune disorder that causes hair to fall out in small patches."
+},
+{
+  "name": "Hypothyroidism",
+  "symptoms": ["fatigue", "weight gain", "cold intolerance", "hair loss"],
+  "medication": ["Levothyroxine (synthetic thyroid hormone)"],
+  "description": "A condition in which the thyroid gland doesn't produce enough thyroid hormones."
+},
+{
+  "name": "Hyperthyroidism",
+  "symptoms": ["weight loss", "rapid heartbeat", "anxiety", "hair loss"],
+  "medication": ["Antithyroid medications", "Radioactive iodine", "Beta blockers"],
+  "description": "A condition in which the thyroid gland produces too much thyroid hormone."
+},
+{
+  "name": "Lupus",
+  "symptoms": ["fatigue", "joint pain", "skin rashes", "hair loss"],
+  "medication": ["Nonsteroidal anti-inflammatory drugs (NSAIDs)", "Corticosteroids", "Immunosuppressants"],
+  "description": "An autoimmune disease where the immune system attacks its own tissues, causing widespread inflammation and tissue damage."
+},
+{
+  "name": "Polycystic Ovary Syndrome (PCOS)",
+  "symptoms": ["irregular menstrual cycles", "weight gain", "acne", "hair loss"],
+  "medication": ["Hormonal birth control", "Metformin", "Anti-androgens"],
+  "description": "A hormonal disorder causing enlarged ovaries with small cysts on the outer edges."
+},
+{
+  "name": "Sepsis",
+  "symptoms": ["fever", "chills", "sweating", "rapid heartbeat", "shortness of breath"],
+  "medication": ["Antibiotics", "Intravenous fluids", "Vasopressors"],
+  "description": "A life-threatening condition that arises when the body's response to infection causes injury to its own tissues and organs."
+},
+{
+  "name": "Sinusitis",
+  "symptoms": ["congestion", "runny nose", "post-nasal drip", "facial pain", "headache", "cold symptoms"],
+  "medication": ["Decongestants", "Nasal corticosteroids", "Antibiotics (if bacterial)"],
+  "description": "An inflammation or swelling of the tissue lining the sinuses, which can be caused by infections or allergies."
+},
+{
+  "name": "Allergic Rhinitis (Hay Fever)",
+  "symptoms": ["sneezing", "runny or stuffy nose", "itchy eyes", "cold symptoms", "cough"],
+  "medication": ["Antihistamines", "Decongestants", "Nasal corticosteroids"],
+  "description": "An allergic reaction that causes sneezing, congestion, and a runny nose."
+},
+{
+  "name": "Respiratory Syncytial Virus (RSV) Infection",
+  "symptoms": ["runny nose", "decreased appetite", "coughing", "sneezing", "fever", "wheezing"],
+  "medication": ["Supportive care", "Oxygen therapy", "Hydration"],
+  "description": "A common respiratory virus that usually causes mild, cold-like symptoms."
+},
+{
+  "name": "Conjunctivitis (Pink Eye)",
+  "symptoms": ["redness of the eye", "itchy eyes", "tearing", "discharge from the eyes", "gritty feeling"],
+  "medication": ["Antibiotic eye drops (if bacterial)", "Antiviral medication (if viral)", "Antihistamines (if allergic)"],
+  "description": "An inflammation or infection of the conjunctiva, the clear tissue that lines the inside of the eyelid and covers the white part of the eye."
+},
+{
+  "name": "Uveitis",
+  "symptoms": ["redness of the eye", "eye pain", "blurred vision", "light sensitivity", "floaters"],
+  "medication": ["Corticosteroids", "Immunosuppressive drugs", "Antibiotics or antiviral drugs (if infectious)"],
+  "description": "An inflammation of the uvea, the middle layer of the eye, which can cause swelling and damage to eye tissues."
+},
+{
+  "name": "Blepharitis",
+  "symptoms": ["redness of the eyelids", "itchy eyelids", "swollen eyelids", "crusty eyelashes", "burning sensation"],
+  "medication": ["Warm compresses", "Eyelid scrubs", "Antibiotic ointments or drops"],
+  "description": "An inflammation of the eyelids that affects the eyelashes or tear production."
+},
+{
+  "name": "Keratitis",
+  "symptoms": ["redness of the eye", "eye pain", "excess tears or discharge", "blurred vision", "sensitivity to light"],
+  "medication": ["Antibacterial, antifungal, or antiviral eye drops (depending on cause)", "Steroid eye drops"],
+  "description": "An inflammation of the cornea, the clear, dome-shaped tissue on the front of the eye."
+},
+{
+  "name": "Glaucoma",
+  "symptoms": ["redness of the eye", "eye pain", "blurred vision", "halos around lights", "nausea and vomiting"],
+  "medication": ["Eye drops", "Oral medications", "Surgery or laser treatment"],
+  "description": "A group of eye conditions that damage the optic nerve, often due to high eye pressure, leading to vision loss."
+},
+{
+  "name": "Dry Eye Syndrome",
+  "symptoms": ["redness of the eye", "itchy eyes", "burning sensation", "feeling of something in the eye", "blurred vision"],
+  "medication": ["Artificial tears", "Prescription eye drops", "Punctal plugs"],
+  "description": "A condition where the eyes do not produce enough tears or the tears evaporate too quickly, leading to dryness and irritation."
+},
+{
+  "name": "Iritis",
+  "symptoms": ["redness of the eye", "eye pain", "blurred vision", "sensitivity to light", "small or irregular pupil"],
+  "medication": ["Steroid eye drops", "Dilating eye drops"],
+  "description": "An inflammation of the iris, the colored part of the eye, which can cause pain and vision problems."
+},
+{
+  "name": "Otitis Media",
+  "symptoms": ["ear pain", "fever", "hearing loss", "fluid drainage from ear", "irritability"],
+  "medication": ["Antibiotics", "Pain relievers", "Warm compresses"],
+  "description": "An infection of the middle ear, common in children, often following a respiratory infection."
+},
+{
+  "name": "Labyrinthitis",
+  "symptoms": ["ear pain", "dizziness", "hearing loss", "tinnitus (ringing in the ear)", "nausea"],
+  "medication": ["Antibiotics (if bacterial)", "Antiviral drugs (if viral)", "Antihistamines", "Steroids"],
+  "description": "An inner ear infection or inflammation that affects the labyrinth, which can lead to vertigo and hearing loss."
+},
+{
+  "name": "Vitamin B12 Deficiency",
+  "symptoms": ["fatigue", "weakness", "loss of taste", "pale skin", "shortness of breath", "numbness or tingling"],
+  "medication": ["Vitamin B12 supplements", "Dietary changes"],
+  "description": "A deficiency in vitamin B12 can cause a range of symptoms, including neurological issues and taste disturbances."
+},
+{
+  "name": "COVID-19",
+  "symptoms": ["fever", "cough", "shortness of breath", "loss of taste", "loss of smell", "fatigue", "body aches"],
+  "medication": ["Antiviral drugs", "Supportive care", "Symptomatic treatment"],
+  "description": "A viral infection caused by the SARS-CoV-2 virus, affecting the respiratory system and causing a wide range of symptoms."
+},
+{
+  "name": "Oral Thrush (Candidiasis)",
+  "symptoms": ["white patches on the tongue or inner cheeks", "redness", "soreness", "loss of taste", "pain while eating or swallowing"],
+  "medication": ["Antifungal medications", "Mouth rinses", "Oral hygiene"],
+  "description": "A fungal infection in the mouth caused by Candida species, commonly seen in infants, older adults, and immunocompromised individuals."
+},
+{
+  "name": "Aphthous Stomatitis (Canker Sores)",
+  "symptoms": ["small, round, white or yellow sores with a red edge", "pain in the mouth", "difficulty eating or speaking"],
+  "medication": ["Topical treatments", "Mouth rinses", "Pain relievers"],
+  "description": "Small, painful ulcers that occur inside the mouth, often triggered by stress, injury, or certain foods."
+},
+{
+  "name": "Hand, Foot, and Mouth Disease",
+  "symptoms": ["fever", "sore throat", "painful red blisters on the tongue, gums, and inside of the cheeks", "rash on the hands and feet"],
+  "medication": ["Pain relievers", "Topical treatments", "Hydration"],
+  "description": "A contagious viral infection common in young children, characterized by sores in the mouth and a rash on the hands and feet."
+},
+{
+  "name": "Scalp Psoriasis",
+  "symptoms": ["red patches on the scalp", "flaking", "hair loss"],
+  "medication": ["Topical corticosteroids", "Vitamin D analogs", "Phototherapy"],
+  "description": "A common skin disorder that causes raised, reddish, scaly patches, often on the scalp."
+},
+      {
         "name": "Parkinson's Disease",
         "symptoms": ["tremor", "slowed movement", "rigid muscles"],
         "medication": ["Levodopa", "Dopamine agonists"],
