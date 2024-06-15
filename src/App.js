@@ -5,8 +5,8 @@ import RegisterForm from './components/Register'
 import Home from './components/Home'
 import MedicalEducation from './components/MedicalEducation'
 import Contact from './components/Contact'
-import NotFound from './components/NotFound'
 import NewHome from './components/NewHome'
+import NotFound from './components/NotFound'
 
 const App = () => (
   <BrowserRouter>

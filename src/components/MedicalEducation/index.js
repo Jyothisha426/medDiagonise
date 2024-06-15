@@ -1,7 +1,23 @@
+import { useEffect } from 'react';
 import Header from '../Header'
+import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
 import './index.css'
 
-const MedicalEducation = () => (
+const MedicalEducation = () => {
+  const navigate = useNavigate();
+  const jwtToken = Cookies.get('jwt_token');
+
+  useEffect(() => {
+    if (jwtToken === undefined) {
+      navigate('/register');
+    }
+  }, [jwtToken, navigate]);
+
+  if (jwtToken === undefined) {
+    return null;
+  }
+  return (
   <>
   <Header />
   <div className="medication-container">
@@ -80,5 +96,6 @@ const MedicalEducation = () => (
      </div>
      </>
 )
+}
 
 export default MedicalEducation

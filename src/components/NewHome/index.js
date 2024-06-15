@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import Header from "../Header";
+import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
 import "./index.css";
 
 const NewHome = () => {
@@ -9,6 +11,15 @@ const NewHome = () => {
   const [matchedDiseases, setMatchedDiseases] = useState([]);
   const [symptomOptions, setSymptomOptions] = useState([]);
   const [error, setError] = useState("");
+
+  const navigate = useNavigate();
+  const jwtToken = Cookies.get('jwt_token');
+
+  useEffect(() => {
+    if (jwtToken === undefined) {
+      navigate('/register');
+    }
+  }, [jwtToken, navigate]);
 
   useEffect(() => {
     fetch("/diseases.json")
@@ -41,43 +52,47 @@ const NewHome = () => {
     }
   };
 
+  if (jwtToken === undefined) {
+    return null;
+  }
+
   return (
     <>
-    <Header />
-    <div className="app-container">
-      <h1 className="heading">Disease Diagnosis</h1>
-      <div className="input-container">
-        <label htmlFor="symptoms">Enter symptoms:</label>
-        <Select
-          isMulti
-          id="symptoms"
-          options={symptomOptions}
-          value={selectedSymptoms}
-          onChange={setSelectedSymptoms}
-          placeholder="Select symptoms"
-        />
-        <button onClick={handleSearch}>Submit Symptoms</button>
+      <Header />
+      <div className="app-container">
+        <h1 className="heading">Disease Diagnosis</h1>
+        <div className="input-container">
+          <label htmlFor="symptoms">Enter symptoms:</label>
+          <Select
+            isMulti
+            id="symptoms"
+            options={symptomOptions}
+            value={selectedSymptoms}
+            onChange={setSelectedSymptoms}
+            placeholder="Select symptoms"
+          />
+          <button onClick={handleSearch}>Submit Symptoms</button>
+        </div>
+        <div className="results-container">
+          {error && <p>{error}</p>}
+          {matchedDiseases.length > 0 ? (
+            matchedDiseases.map((disease, index) => (
+              <div key={index} className="disease-card">
+                <h2>{disease.name}</h2>
+                <p>
+                  <strong>Disease Overview:</strong> {disease.description}
+                </p>
+                <p>
+                  <strong>Warning Indicators:</strong> {disease.symptoms.join(", ")}
+                </p>
+                <p>
+                  <strong>Medication:</strong> {disease.medication.join(", ")}
+                </p>
+              </div>
+            ))
+          ) : null}
+        </div>
       </div>
-      <div className="results-container">
-        {error && <p>{error}</p>}
-        {matchedDiseases.length > 0 ? (
-          matchedDiseases.map((disease, index) => (
-            <div key={index} className="disease-card">
-              <h2>{disease.name}</h2>
-              <p>
-                <strong>Disease Overview:</strong> {disease.description}
-              </p>
-              <p>
-                <strong>Warning Indicators:</strong> {disease.symptoms.join(", ")}
-              </p>
-              <p>
-                <strong>Medication:</strong> {disease.medication.join(", ")}
-              </p>
-            </div>
-          ))
-        ) : null}
-      </div>
-    </div>
     </>
   );
 };
